@@ -1,0 +1,71 @@
+# Environment / Virtual Environment
+env/
+venv/
+.venv/
+ENV/
+.env
+.env.*
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*tatva_local.db
+
+# Secret files
+*.pem
+*.key
+*.crt
+secrets.txt
+current_state.md
+backend_databases_overview.md
+
+# Node / Frontend
+node_modules/
+.next/
+.vite/
+dist/
+frontend/dist/
+
+# Runtime upload data (real case files — never commit)
+backend/uploads/CASE-*/
+
+# Large ML / model files
+*.pt
+*.bin
+*.h5
+*.pkl
+*.onnx
+*.safetensors
+*.gguf
+
+# Test / temp
+.pytest_cache/
+.coverage
+htmlcov/
