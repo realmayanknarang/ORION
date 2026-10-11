@@ -18,6 +18,7 @@ from insights.insight_schema import (
 )
 from db.postgres_client import PostgresClient
 from db.redis_client import RedisClient
+from analysis.rule_validation.relation_analyzer import get_relation_summary_and_metadata
 
 # ---------------------------------------------------------------------------
 # TATVA Forensic Intelligence API
@@ -26,7 +27,7 @@ from db.redis_client import RedisClient
 app = FastAPI(
     title="TATVA Forensic Intelligence API",
     description="Backend API for the TATVA forensic investigation platform.",
-    version="0.4.0",
+    version="0.5.0",
 )
 
 app.add_middleware(
@@ -140,6 +141,14 @@ class NoteCreateRequest(BaseModel):
     entity_ref: Optional[str] = None
     tags: Optional[List[str]] = None
 
+VALID_STATUSES = {"ACTIVE", "CLEARED", "PERSON_OF_INTEREST", "PRIORITY_TARGET"}
+
+class EntityAssessmentCreate(BaseModel):
+    case_id: str
+    entity_id: str
+    status: str
+    reason: Optional[str] = ""
+
 # ---------------------------------------------------------------------------
 # Health check
 # ---------------------------------------------------------------------------
@@ -177,13 +186,69 @@ def read_timeline():
 def read_summary():
     return get_summary()
 
+@app.get("/api/insights/risk-profiles")
+def read_person_risk_profiles():
+    import json
+    file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "analysis", "rule_validation", "output", "person_risk_profiles.json")
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
+@app.get("/api/insights/relationship-profiles")
+def read_relationship_risk_profiles():
+    import json
+    file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "analysis", "rule_validation", "output", "relationship_risk_profiles.json")
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
+@app.get("/api/insights/relation-details")
+def read_relation_details(source: str, target: str):
+    try:
+        return get_relation_summary_and_metadata(source, target)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+# ---------------------------------------------------------------------------
+# Entity Assessment Endpoints
+# ---------------------------------------------------------------------------
+
+@app.post("/api/entity-assessments")
+def upsert_entity_assessment(assessment: EntityAssessmentCreate):
+    if assessment.status not in VALID_STATUSES:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Invalid status '{assessment.status}'. Must be one of: {', '.join(sorted(VALID_STATUSES))}"
+        )
+    try:
+        return db.upsert_entity_assessment(
+            case_id=assessment.case_id,
+            entity_id=assessment.entity_id,
+            status=assessment.status,
+            reason=assessment.reason,
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/entity-assessments/{case_id}")
+def get_entity_assessments(case_id: str):
+    try:
+        return db.get_entity_assessments(case_id=case_id)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 # ---------------------------------------------------------------------------
 # Case Management Endpoints
 # ---------------------------------------------------------------------------
 
 @app.get("/api/cases")
-def list_cases():
-    return db.list_cases()
+def list_cases(status: Optional[str] = None):
+    try:
+        return db.list_cases(status=status)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/api/cases")
 def create_case(payload: CaseCreateRequest):
