@@ -65,6 +65,10 @@ backend/uploads/CASE-*/
 *.safetensors
 *.gguf
 
+# Generated geo cache files
+backend/Graph_Integration_Layer/geo_cache.json
+backend/Graph_Integration_Layer/output/geo_cache.json
+
 # Test / temp
 .pytest_cache/
 .coverage
