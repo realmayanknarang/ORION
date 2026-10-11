@@ -1,6 +1,6 @@
 # TATVA | Advanced Digital Forensics & Graph Intelligence Platform
 
-TATVA is a state-of-the-art, multi-dimensional digital forensics and intelligence synthesis platform designed to **empower, assist, and accelerate human investigators**—not to replace them. By acting as a diagnostic force multiplier, it dynamically ingests messy, heterogeneous evidence payloads (such as call detail records, banking transfers, tower coordinates, emails, and unstructured police reports), resolves entity duplication, maps interactive 3D knowledge graphs, and flags structural anomalies. It serves to augment investigator intuition and speed up key decision cycles, leaving final evidentiary interpretations and legal judgments strictly in human hands.
+TATVA is a state-of-the-art, multi-dimensional digital forensics and intelligence synthesis platform designed to empower, assist, and accelerate human investigators, not to replace them. By acting as a diagnostic force multiplier, it dynamically ingests messy, heterogeneous evidence payloads (such as call detail records, banking transfers, tower coordinates, emails, and unstructured police reports), resolves entity duplication, maps interactive 3D knowledge graphs, and flags structural anomalies. It serves to augment investigator intuition and speed up key decision cycles, leaving final evidentiary interpretations and legal judgments strictly in human hands.
 
 ## 🎥 Project Demo
 
@@ -159,5 +159,3 @@ Open `http://localhost:5173` to access the TATVA portal.
 ## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-# ORION
