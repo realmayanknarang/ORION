@@ -1,0 +1,1269 @@
+[
+  {
+    "person_id": "MASTER_ee1fa35b",
+    "name": "Rajan Mehta",
+    "risk_score": 94.8,
+    "risk_level": "CRITICAL",
+    "confidence": 0.99,
+    "graph_metrics": {
+      "degree": 0.3261,
+      "betweenness": 0.1047,
+      "pagerank": 0.0912
+    },
+    "triggered_rules": [
+      "FIN_MULE_PATTERN",
+      "TEMP_COMM_TO_TRANSFER"
+    ],
+    "explanation": "Rajan Mehta has been assigned a CRITICAL risk score of 94.8 (Confidence: 99%). The primary contributing factors include: mule-account behavior (immediate forwarding of incoming funds) and coordinated communication followed immediately by financial transfer. Immediate forwarding of funds suggests account may be functioning as a layer-mule.",
+    "identifiers": [
+      "rajan mehta",
+      "8877665544",
+      "rajan",
+      "acc9001"
+    ],
+    "entity_types": [
+      "PERSON",
+      "PHONE_NUMBER",
+      "ACCOUNT"
+    ],
+    "evidence": [
+      {
+        "person_id": "MASTER_ee1fa35b",
+        "rule_code": "FIN_MULE_PATTERN",
+        "rule_name": "Mule Pattern",
+        "base_weight": 20.0,
+        "confidence": 0.99,
+        "source_reliability": 1.0,
+        "time_decay": 0.7,
+        "weighted_contribution": 13.91,
+        "timestamp": "2026-05-22T22:05:00",
+        "evidence": {
+          "inbound_transfer": {
+            "source": "ACC8001",
+            "amount": 9000,
+            "timestamp": "2026-05-22 21:41:00"
+          },
+          "outbound_transfer": {
+            "target": "ACC_HAWALA",
+            "amount": 64400,
+            "timestamp": "2026-05-22 22:05:00"
+          },
+          "delay_seconds": 1440
+        }
+      },
+      {
+        "person_id": "MASTER_ee1fa35b",
+        "rule_code": "FIN_MULE_PATTERN",
+        "rule_name": "Mule Pattern",
+        "base_weight": 20.0,
+        "confidence": 0.99,
+        "source_reliability": 1.0,
+        "time_decay": 0.7,
+        "weighted_contribution": 13.91,
+        "timestamp": "2026-05-22T22:05:00",
+        "evidence": {
+          "inbound_transfer": {
+            "source": "ACC3001",
+            "amount": 9200,
+            "timestamp": "2026-05-22 21:36:00"
+          },
+          "outbound_transfer": {
+            "target": "ACC_HAWALA",
+            "amount": 64400,
+            "timestamp": "2026-05-22 22:05:00"
+          },
+          "delay_seconds": 1740
+        }
+      },
+      {
+        "person_id": "MASTER_ee1fa35b",
+        "rule_code": "FIN_MULE_PATTERN",
+        "rule_name": "Mule Pattern",
+        "base_weight": 20.0,
+        "confidence": 0.99,
+        "source_reliability": 1.0,
+        "time_decay": 0.7,
+        "weighted_contribution": 13.91,
+        "timestamp": "2026-05-22T22:05:00",
+        "evidence": {
+          "inbound_transfer": {
+            "source": "ACC2001",
+            "amount": 9400,
+            "timestamp": "2026-05-22 21:35:00"
+          },
+          "outbound_transfer": {
+            "target": "ACC_HAWALA",
+            "amount": 64400,
+            "timestamp": "2026-05-22 22:05:00"
+          },
+          "delay_seconds": 1800
+        }
+      },
+      {
+        "person_id": "MASTER_ee1fa35b",
+        "rule_code": "FIN_MULE_PATTERN",
+        "rule_name": "Mule Pattern",
+        "base_weight": 20.0,
+        "confidence": 0.99,
+        "source_reliability": 1.0,
+        "time_decay": 0.7,
+        "weighted_contribution": 13.91,
+        "timestamp": "2026-05-22T22:05:00",
+        "evidence": {
+          "inbound_transfer": {
+            "source": "ACC4001",
+            "amount": 9500,
+            "timestamp": "2026-05-22 21:37:00"
+          },
+          "outbound_transfer": {
+            "target": "ACC_HAWALA",
+            "amount": 64400,
+            "timestamp": "2026-05-22 22:05:00"
+          },
+          "delay_seconds": 1680
+        }
+      },
+      {
+        "person_id": "MASTER_ee1fa35b",
+        "rule_code": "FIN_MULE_PATTERN",
+        "rule_name": "Mule Pattern",
+        "base_weight": 20.0,
+        "confidence": 0.99,
+        "source_reliability": 1.0,
+        "time_decay": 0.7,
+        "weighted_contribution": 13.91,
+        "timestamp": "2026-05-22T22:05:00",
+        "evidence": {
+          "inbound_transfer": {
+            "source": "ACC6001",
+            "amount": 9300,
+            "timestamp": "2026-05-22 21:39:00"
+          },
+          "outbound_transfer": {
+            "target": "ACC_HAWALA",
+            "amount": 64400,
+            "timestamp": "2026-05-22 22:05:00"
+          },
+          "delay_seconds": 1560
+        }
+      },
+      {
+        "person_id": "MASTER_ee1fa35b",
+        "rule_code": "FIN_MULE_PATTERN",
+        "rule_name": "Mule Pattern",
+        "base_weight": 20.0,
+        "confidence": 0.99,
+        "source_reliability": 1.0,
+        "time_decay": 0.7,
+        "weighted_contribution": 13.91,
+        "timestamp": "2026-05-22T22:05:00",
+        "evidence": {
+          "inbound_transfer": {
+            "source": "ACC7001",
+            "amount": 9100,
+            "timestamp": "2026-05-22 21:40:00"
+          },
+          "outbound_transfer": {
+            "target": "ACC_HAWALA",
+            "amount": 64400,
+            "timestamp": "2026-05-22 22:05:00"
+          },
+          "delay_seconds": 1500
+        }
+      },
+      {
+        "person_id": "MASTER_ee1fa35b",
+        "rule_code": "FIN_MULE_PATTERN",
+        "rule_name": "Mule Pattern",
+        "base_weight": 20.0,
+        "confidence": 0.99,
+        "source_reliability": 1.0,
+        "time_decay": 0.7,
+        "weighted_contribution": 13.91,
+        "timestamp": "2026-05-22T22:05:00",
+        "evidence": {
+          "inbound_transfer": {
+            "source": "ACC5001",
+            "amount": 8900,
+            "timestamp": "2026-05-22 21:38:00"
+          },
+          "outbound_transfer": {
+            "target": "ACC_HAWALA",
+            "amount": 64400,
+            "timestamp": "2026-05-22 22:05:00"
+          },
+          "delay_seconds": 1620
+        }
+      },
+      {
+        "person_id": "MASTER_ee1fa35b",
+        "rule_code": "TEMP_COMM_TO_TRANSFER",
+        "rule_name": "Communication -> Transfer Coordination",
+        "base_weight": 12.0,
+        "confidence": 0.99,
+        "source_reliability": 1.0,
+        "time_decay": 0.7,
+        "weighted_contribution": 8.35,
+        "timestamp": "2026-05-22T22:05:00",
+        "evidence": {
+          "communication": {
+            "type": "CALLED",
+            "source": "Rajan Mehta",
+            "target": "Arjun",
+            "timestamp": "2026-05-22 22:00:00"
+          },
+          "transfer": {
+            "source": "Rajan Mehta",
+            "target": "ACC_HAWALA",
+            "amount": 64400,
+            "timestamp": "2026-05-22 22:05:00"
+          },
+          "delay_seconds": 300
+        }
+      }
+    ],
+    "timeline": [
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to Rajan Mehta via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22 21:35:00",
+        "action": "TRANSFERRED_TO",
+        "description": "ACC2001 transferred Rs.9,400 to Rajan Mehta via IMPS",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:36:00",
+        "action": "TRANSFERRED_TO",
+        "description": "ACC3001 transferred Rs.9,200 to Rajan Mehta via IMPS",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:37:00",
+        "action": "TRANSFERRED_TO",
+        "description": "ACC4001 transferred Rs.9,500 to Rajan Mehta via IMPS",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:38:00",
+        "action": "TRANSFERRED_TO",
+        "description": "ACC5001 transferred Rs.8,900 to Rajan Mehta via IMPS",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:39:00",
+        "action": "TRANSFERRED_TO",
+        "description": "ACC6001 transferred Rs.9,300 to Rajan Mehta via IMPS",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:40:00",
+        "action": "TRANSFERRED_TO",
+        "description": "ACC7001 transferred Rs.9,100 to Rajan Mehta via IMPS",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:41:00",
+        "action": "TRANSFERRED_TO",
+        "description": "ACC8001 transferred Rs.9,000 to Rajan Mehta via IMPS",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:45:00",
+        "action": "CALLED",
+        "description": "Vikram Khanna called Rajan Mehta (180s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22 22:00:00",
+        "action": "CALLED",
+        "description": "Rajan Mehta called Arjun (75s, incoming)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22 22:00:00",
+        "action": "CONNECTED_TO_TOWER",
+        "description": "Rajan Mehta linked to Cell Tower (Twr_Kol_315) via CONNECTED_TO_TOWER",
+        "confidence": 0.95,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22T22:05:00",
+        "action": "MENTIONED",
+        "description": "Arjun linked to Rajan Mehta via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22 22:05:00",
+        "action": "TRANSFERRED_TO",
+        "description": "Rajan Mehta transferred Rs.64,400 to ACC_HAWALA via NEFT",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 22:35:00",
+        "action": "CALLED",
+        "description": "Rajan Mehta called Rahul Sen (45s, incoming)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22 22:35:00",
+        "action": "CONNECTED_TO_TOWER",
+        "description": "Rajan Mehta linked to Cell Tower (Twr_Kol_102) via CONNECTED_TO_TOWER",
+        "confidence": 0.95,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22 22:50:00",
+        "action": "CALLED",
+        "description": "Rahul Sen called Rajan Mehta (165s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22 23:00:00",
+        "action": "CALLED",
+        "description": "Arjun called Rajan Mehta (95s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      }
+    ]
+  },
+  {
+    "person_id": "MASTER_b41353c7",
+    "name": "Rahul Sen",
+    "risk_score": 82.1,
+    "risk_level": "CRITICAL",
+    "confidence": 0.99,
+    "graph_metrics": {
+      "degree": 0.5217,
+      "betweenness": 0.1074,
+      "pagerank": 0.034
+    },
+    "triggered_rules": [
+      "COMM_DELETION_LANGUAGE",
+      "CO_CORROBORATION",
+      "FIN_SMURFING"
+    ],
+    "explanation": "Rahul Sen has been assigned a CRITICAL risk score of 82.1 (Confidence: 98%). The primary contributing factors include: structuring transaction flows (smurfing sub-threshold transfers), cross-source corroboration, and exchanging messages containing explicit deletion instructions. Instructions to wipe communications suggest a deliberate effort to destroy forensic evidence.",
+    "identifiers": [
+      "rahul sen",
+      "9876543210",
+      "acc1001",
+      "android_001",
+      "rahul"
+    ],
+    "entity_types": [
+      "PERSON",
+      "LOCATION",
+      "PHONE_NUMBER",
+      "ACCOUNT",
+      "DEVICE"
+    ],
+    "evidence": [
+      {
+        "person_id": "MASTER_b41353c7",
+        "rule_code": "COMM_DELETION_LANGUAGE",
+        "rule_name": "Deletion Language",
+        "base_weight": 10.0,
+        "confidence": 0.97,
+        "source_reliability": 0.85,
+        "time_decay": 0.7,
+        "weighted_contribution": 5.76,
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "evidence": {
+          "channel": "emailed",
+          "target": "Arjun",
+          "text_snippet": "Tonight's Operation - Final Plan",
+          "matched_by": "forensic_signal"
+        }
+      },
+      {
+        "person_id": "MASTER_b41353c7",
+        "rule_code": "FIN_SMURFING",
+        "rule_name": "Smurfing",
+        "base_weight": 15.0,
+        "confidence": 0.99,
+        "source_reliability": 1.0,
+        "time_decay": 0.7,
+        "weighted_contribution": 10.41,
+        "timestamp": "2026-05-22T21:11:00",
+        "evidence": {
+          "transfer_count": 7,
+          "total_amount": 64400,
+          "amounts": [
+            9400,
+            9200,
+            9500,
+            8900,
+            9300,
+            9100,
+            9000
+          ],
+          "targets": [
+            "ACC2001",
+            "ACC3001",
+            "ACC4001",
+            "ACC5001",
+            "ACC6001",
+            "ACC7001",
+            "ACC8001"
+          ]
+        }
+      },
+      {
+        "person_id": "MASTER_b41353c7",
+        "rule_code": "CO_CORROBORATION",
+        "rule_name": "Cross-Source Corroboration",
+        "base_weight": 10.0,
+        "confidence": 1.0,
+        "source_reliability": 0.9,
+        "time_decay": 0.99,
+        "weighted_contribution": 8.95,
+        "timestamp": "2026-05-29T21:00:00",
+        "evidence": {
+          "sources_count": 5,
+          "sources_list": [
+            "bank_transaction",
+            "cdr_record",
+            "fir_document",
+            "mobile_gps",
+            "telecom_tower"
+          ]
+        }
+      }
+    ],
+    "timeline": [
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "EMAILED",
+        "description": "Rahul Sen emailed Arjun -- Subject: Tonight's Operation - Final Plan",
+        "confidence": 0.97,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to Howrah Station via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to Arjun via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to Rajan Mehta via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to Vikram Khanna via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to Hyundai via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to MASTER_e6f4f60a via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to Email_Address_Cc44D0C6 via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to Email_Address_5029504C via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22 20:45:00",
+        "action": "CALLED",
+        "description": "Arjun called Rahul Sen (60s, incoming)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22T21:00:00+05:30",
+        "action": "MENTIONED",
+        "description": "@Vikramk linked to Rahul Sen via MENTIONED",
+        "confidence": 0.7,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22 21:05:00",
+        "action": "CALLED",
+        "description": "Vikram Khanna called Rahul Sen (90s, incoming)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22 21:11:00",
+        "action": "TRANSFERRED_TO",
+        "description": "Rahul Sen transferred Rs.9,400 to ACC2001 via UPI",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:12:00",
+        "action": "TRANSFERRED_TO",
+        "description": "Rahul Sen transferred Rs.9,200 to ACC3001 via UPI",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:13:00",
+        "action": "TRANSFERRED_TO",
+        "description": "Rahul Sen transferred Rs.9,500 to ACC4001 via UPI",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:14:00",
+        "action": "TRANSFERRED_TO",
+        "description": "Rahul Sen transferred Rs.8,900 to ACC5001 via UPI",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:15:00",
+        "action": "TRANSFERRED_TO",
+        "description": "Rahul Sen transferred Rs.9,300 to ACC6001 via UPI",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:16:00",
+        "action": "TRANSFERRED_TO",
+        "description": "Rahul Sen transferred Rs.9,100 to ACC7001 via UPI",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22 21:17:00",
+        "action": "TRANSFERRED_TO",
+        "description": "Rahul Sen transferred Rs.9,000 to ACC8001 via UPI",
+        "confidence": 0.99,
+        "source_type": "bank_transaction"
+      },
+      {
+        "timestamp": "2026-05-22T21:20:00",
+        "action": "MENTIONED",
+        "description": "Arjun linked to Rahul Sen via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22 21:35:00",
+        "action": "CALLED",
+        "description": "Rahul Sen called Arjun (320s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22T21:35:00",
+        "action": "LOCATED_AT",
+        "description": "Rahul Sen observed located at Chatterjee Lane, Bowbazar, Kolkata",
+        "confidence": 0.95,
+        "source_type": "telecom_tower"
+      },
+      {
+        "timestamp": "2026-05-22 22:05:00",
+        "action": "CALLED",
+        "description": "Rahul Sen called Vikram Khanna (240s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22T22:20:00",
+        "action": "LOCATED_AT",
+        "description": "Rahul Sen observed located at Bow Bazar North, Kolkata",
+        "confidence": 0.95,
+        "source_type": "mobile_gps"
+      },
+      {
+        "timestamp": "2026-05-22T22:35:00",
+        "action": "LOCATED_AT",
+        "description": "Rahul Sen observed located at Biplabi Pulin Das Street, City College, Kolkata",
+        "confidence": 0.95,
+        "source_type": "mobile_gps"
+      },
+      {
+        "timestamp": "2026-05-22 22:35:00",
+        "action": "CALLED",
+        "description": "Rajan Mehta called Rahul Sen (45s, incoming)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22T22:40:00",
+        "action": "MESSAGED",
+        "description": "Rahul Sen messaged Group_Chat via whatsapp/telegram: 'Good work everyone. Clear your devices....'",
+        "confidence": 0.95,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22 22:50:00",
+        "action": "CALLED",
+        "description": "Rahul Sen called Rajan Mehta (165s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22 22:50:00",
+        "action": "CONNECTED_TO_TOWER",
+        "description": "Rahul Sen linked to Cell Tower (Twr_Kol_102) via CONNECTED_TO_TOWER",
+        "confidence": 0.95,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-29T21:00:00",
+        "action": "TRANSFERRED_MONEY",
+        "description": "Rahul Sen linked to Arjun via TRANSFERRED_MONEY",
+        "confidence": 0.75,
+        "source_type": "fir_document"
+      }
+    ]
+  },
+  {
+    "person_id": "MASTER_f24caf16",
+    "name": "Vikram Khanna",
+    "risk_score": 72.6,
+    "risk_level": "HIGH",
+    "confidence": 0.99,
+    "graph_metrics": {
+      "degree": 0.3043,
+      "betweenness": 0.0379,
+      "pagerank": 0.0185
+    },
+    "triggered_rules": [
+      "CO_CORROBORATION",
+      "TEMP_COMM_TO_TRANSFER"
+    ],
+    "explanation": "Vikram Khanna has been assigned a HIGH risk score of 72.6 (Confidence: 99%). The primary contributing factors include: coordinated communication followed immediately by financial transfer and cross-source corroboration. ",
+    "identifiers": [
+      "watch_abc",
+      "vikram khanna",
+      "vikram",
+      "9988776655"
+    ],
+    "entity_types": [
+      "PERSON",
+      "WEARABLE_DEVICE",
+      "PHONE_NUMBER"
+    ],
+    "evidence": [
+      {
+        "person_id": "MASTER_f24caf16",
+        "rule_code": "TEMP_COMM_TO_TRANSFER",
+        "rule_name": "Communication -> Transfer Coordination",
+        "base_weight": 12.0,
+        "confidence": 0.99,
+        "source_reliability": 1.0,
+        "time_decay": 0.7,
+        "weighted_contribution": 8.33,
+        "timestamp": "2026-05-22T21:17:00",
+        "evidence": {
+          "communication": {
+            "type": "CALLED",
+            "source": "Vikram Khanna",
+            "target": "Rahul Sen",
+            "timestamp": "2026-05-22 21:05:00"
+          },
+          "transfer": {
+            "source": "Rahul Sen",
+            "target": "ACC8001",
+            "amount": 9000,
+            "timestamp": "2026-05-22 21:17:00"
+          },
+          "delay_seconds": 720
+        }
+      },
+      {
+        "person_id": "MASTER_f24caf16",
+        "rule_code": "CO_CORROBORATION",
+        "rule_name": "Cross-Source Corroboration",
+        "base_weight": 10.0,
+        "confidence": 1.0,
+        "source_reliability": 0.9,
+        "time_decay": 0.7,
+        "weighted_contribution": 6.33,
+        "timestamp": "2026-05-22T22:38:00",
+        "evidence": {
+          "sources_count": 3,
+          "sources_list": [
+            "cdr_record",
+            "telecom_tower",
+            "wearable_device"
+          ]
+        }
+      }
+    ],
+    "timeline": [
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to Vikram Khanna via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T20:58:00",
+        "action": "LOCATED_AT",
+        "description": "Vikram Khanna observed located at Chatterjee Lane, Bowbazar, Kolkata",
+        "confidence": 0.95,
+        "source_type": "wearable_device"
+      },
+      {
+        "timestamp": "2026-05-22T21:00:00",
+        "action": "LOCATED_AT",
+        "description": "Vikram Khanna observed located at Bowbazar, Kolkata",
+        "confidence": 0.95,
+        "source_type": "telecom_tower"
+      },
+      {
+        "timestamp": "2026-05-22 21:05:00",
+        "action": "CALLED",
+        "description": "Vikram Khanna called Rahul Sen (90s, incoming)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22T21:10:00+05:30",
+        "action": "MENTIONED",
+        "description": "@Arjung linked to Vikram Khanna via MENTIONED",
+        "confidence": 0.7,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T21:15:00",
+        "action": "LOCATED_AT",
+        "description": "Vikram Khanna observed located at Sri Gopal Mullick Ln, Bowbazar, Kolkata",
+        "confidence": 0.95,
+        "source_type": "wearable_device"
+      },
+      {
+        "timestamp": "2026-05-22 21:20:00",
+        "action": "CALLED",
+        "description": "Arjun called Vikram Khanna (200s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22T21:30:00",
+        "action": "LOCATED_AT",
+        "description": "Vikram Khanna observed located at Bow Bazar North, Kolkata",
+        "confidence": 0.95,
+        "source_type": "wearable_device"
+      },
+      {
+        "timestamp": "2026-05-22 21:45:00",
+        "action": "CALLED",
+        "description": "Vikram Khanna called Rajan Mehta (180s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22 22:05:00",
+        "action": "CALLED",
+        "description": "Rahul Sen called Vikram Khanna (240s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22T22:05:00",
+        "action": "MENTIONED",
+        "description": "Arjun linked to Vikram Khanna via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22 22:20:00",
+        "action": "CALLED",
+        "description": "Vikram Khanna called Arjun (130s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22 22:20:00",
+        "action": "CONNECTED_TO_TOWER",
+        "description": "Vikram Khanna linked to Cell Tower (Twr_Kol_210) via CONNECTED_TO_TOWER",
+        "confidence": 0.95,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22T22:38:00",
+        "action": "LOCATED_AT",
+        "description": "Vikram Khanna observed located at Howrah Maidan, Haora",
+        "confidence": 0.95,
+        "source_type": "wearable_device"
+      },
+      {
+        "timestamp": "2026-05-22T22:38:00",
+        "action": "MENTIONED",
+        "description": "Vikram Khanna linked to Howrah Station via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T22:38:00",
+        "action": "MESSAGED",
+        "description": "Vikram Khanna messaged Group_Chat via whatsapp/telegram: 'Reached Howrah Station. Package handed over successfully....'",
+        "confidence": 0.95,
+        "source_type": ""
+      }
+    ]
+  },
+  {
+    "person_id": "MASTER_6137f90b",
+    "name": "Arjun",
+    "risk_score": 67.0,
+    "risk_level": "HIGH",
+    "confidence": 1.0,
+    "graph_metrics": {
+      "degree": 0.2391,
+      "betweenness": 0.027,
+      "pagerank": 0.0294
+    },
+    "triggered_rules": [
+      "CO_CORROBORATION"
+    ],
+    "explanation": "Arjun has been assigned a HIGH risk score of 67.0 (Confidence: 100%). The primary contributing factors include: cross-source corroboration. ",
+    "identifiers": [
+      "9123456780",
+      "arjun",
+      "arjun ghosh"
+    ],
+    "entity_types": [
+      "PERSON",
+      "PHONE_NUMBER"
+    ],
+    "evidence": [
+      {
+        "person_id": "MASTER_6137f90b",
+        "rule_code": "CO_CORROBORATION",
+        "rule_name": "Cross-Source Corroboration",
+        "base_weight": 10.0,
+        "confidence": 1.0,
+        "source_reliability": 0.9,
+        "time_decay": 0.99,
+        "weighted_contribution": 8.95,
+        "timestamp": "2026-05-29T21:00:00",
+        "evidence": {
+          "sources_count": 3,
+          "sources_list": [
+            "cdr_record",
+            "fir_document",
+            "telecom_tower"
+          ]
+        }
+      }
+    ],
+    "timeline": [
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "EMAILED",
+        "description": "Rahul Sen emailed Arjun -- Subject: Tonight's Operation - Final Plan",
+        "confidence": 0.97,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to Arjun via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22 20:45:00",
+        "action": "CALLED",
+        "description": "Arjun called Rahul Sen (60s, incoming)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22T20:45:00",
+        "action": "LOCATED_AT",
+        "description": "Arjun observed located at Surya Sen Street, Baithakkhana, Kolkata",
+        "confidence": 0.95,
+        "source_type": "telecom_tower"
+      },
+      {
+        "timestamp": "2026-05-22 21:20:00",
+        "action": "CALLED",
+        "description": "Arjun called Vikram Khanna (200s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22T21:20:00",
+        "action": "LOCATED_AT",
+        "description": "Arjun observed located at Bow Bazar North, Kolkata",
+        "confidence": 0.95,
+        "source_type": "telecom_tower"
+      },
+      {
+        "timestamp": "2026-05-22T21:20:00",
+        "action": "MENTIONED",
+        "description": "Arjun linked to Rahul Sen via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22 21:35:00",
+        "action": "CALLED",
+        "description": "Rahul Sen called Arjun (320s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22 22:00:00",
+        "action": "CALLED",
+        "description": "Rajan Mehta called Arjun (75s, incoming)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22T22:05:00",
+        "action": "MENTIONED",
+        "description": "Arjun linked to Howrah Station via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T22:05:00",
+        "action": "MENTIONED",
+        "description": "Arjun linked to Rajan Mehta via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T22:05:00",
+        "action": "MENTIONED",
+        "description": "Arjun linked to Vikram Khanna via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T22:05:00",
+        "action": "MESSAGED",
+        "description": "Arjun messaged Group_Chat via whatsapp/telegram: 'Confirm when Vikram reaches Howrah. I will alert Rajan....'",
+        "confidence": 0.95,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22 22:20:00",
+        "action": "CALLED",
+        "description": "Vikram Khanna called Arjun (130s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22 23:00:00",
+        "action": "CALLED",
+        "description": "Arjun called Rajan Mehta (95s, outgoing)",
+        "confidence": 0.99,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-22 23:00:00",
+        "action": "CONNECTED_TO_TOWER",
+        "description": "Arjun linked to Cell Tower (Twr_Kol_105) via CONNECTED_TO_TOWER",
+        "confidence": 0.95,
+        "source_type": "cdr_record"
+      },
+      {
+        "timestamp": "2026-05-29T21:00:00",
+        "action": "TRANSFERRED_MONEY",
+        "description": "Rahul Sen linked to Arjun via TRANSFERRED_MONEY",
+        "confidence": 0.75,
+        "source_type": "fir_document"
+      }
+    ]
+  },
+  {
+    "person_id": "MASTER_425adff9",
+    "name": "@Arjung",
+    "risk_score": 7.2,
+    "risk_level": "LOW",
+    "confidence": 1.0,
+    "graph_metrics": {
+      "degree": 0.1304,
+      "betweenness": 0.0164,
+      "pagerank": 0.0169
+    },
+    "triggered_rules": [],
+    "explanation": "@Arjung has a LOW risk score of 7.2. No suspicious forensic rules were triggered.",
+    "identifiers": [
+      "@arjung"
+    ],
+    "entity_types": [
+      "SOCIAL_HANDLE"
+    ],
+    "evidence": [],
+    "timeline": [
+      {
+        "timestamp": "2026-05-22T20:15:00+05:30",
+        "action": "MENTIONED_USER",
+        "description": "@Rahulsen linked to @Arjung via MENTIONED_USER",
+        "confidence": 0.85,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T21:10:00+05:30",
+        "action": "MENTIONED",
+        "description": "@Arjung linked to Vikram Khanna via MENTIONED",
+        "confidence": 0.7,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T21:10:00+05:30",
+        "action": "MENTIONED_USER",
+        "description": "@Arjung linked to @Rahulsen via MENTIONED_USER",
+        "confidence": 0.85,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T22:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "@Arjung linked to Howrah Station via MENTIONED",
+        "confidence": 0.7,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T22:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "@Arjung linked to @Vikramk via MENTIONED",
+        "confidence": 0.7,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T22:45:00+05:30",
+        "action": "POSTED_ON",
+        "description": "@Arjung posted on Instagram: 'All clear. @VikramK handled the delivery perfectly. Rajan confirmed receipt at H...'",
+        "confidence": 0.95,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T22:45:00+05:30",
+        "action": "MENTIONED_USER",
+        "description": "@Arjung linked to @Vikramk via MENTIONED_USER",
+        "confidence": 0.85,
+        "source_type": ""
+      }
+    ]
+  },
+  {
+    "person_id": "MASTER_4f3dc74c",
+    "name": "@Vikramk",
+    "risk_score": 6.8,
+    "risk_level": "LOW",
+    "confidence": 1.0,
+    "graph_metrics": {
+      "degree": 0.1087,
+      "betweenness": 0.0078,
+      "pagerank": 0.0139
+    },
+    "triggered_rules": [],
+    "explanation": "@Vikramk has a LOW risk score of 6.8. No suspicious forensic rules were triggered.",
+    "identifiers": [
+      "@vikramk"
+    ],
+    "entity_types": [
+      "PERSON",
+      "SOCIAL_HANDLE"
+    ],
+    "evidence": [],
+    "timeline": [
+      {
+        "timestamp": "2026-05-22T21:00:00+05:30",
+        "action": "MENTIONED",
+        "description": "@Vikramk linked to Rahul Sen via MENTIONED",
+        "confidence": 0.7,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T21:00:00+05:30",
+        "action": "MENTIONED",
+        "description": "@Vikramk linked to Hyundai via MENTIONED",
+        "confidence": 0.7,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T21:00:00+05:30",
+        "action": "POSTED_ON",
+        "description": "@Vikramk posted on Facebook: 'Parked the white Hyundai TN09BY9726 near Park Street. Waiting for signal from Ra...'",
+        "confidence": 0.95,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T22:05:00+05:30",
+        "action": "MENTIONED",
+        "description": "@Vikramk linked to Howrah Station via MENTIONED",
+        "confidence": 0.7,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T22:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "@Arjung linked to @Vikramk via MENTIONED",
+        "confidence": 0.7,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T22:45:00+05:30",
+        "action": "MENTIONED_USER",
+        "description": "@Arjung linked to @Vikramk via MENTIONED_USER",
+        "confidence": 0.85,
+        "source_type": ""
+      }
+    ]
+  },
+  {
+    "person_id": "MASTER_656f09cf",
+    "name": "@Rahulsen",
+    "risk_score": 5.6,
+    "risk_level": "LOW",
+    "confidence": 1.0,
+    "graph_metrics": {
+      "degree": 0.0652,
+      "betweenness": 0.0005,
+      "pagerank": 0.0139
+    },
+    "triggered_rules": [],
+    "explanation": "@Rahulsen has a LOW risk score of 5.6. No suspicious forensic rules were triggered.",
+    "identifiers": [
+      "@rahulsen"
+    ],
+    "entity_types": [
+      "SOCIAL_HANDLE"
+    ],
+    "evidence": [],
+    "timeline": [
+      {
+        "timestamp": "2026-05-22T20:15:00+05:30",
+        "action": "POSTED_ON",
+        "description": "@Rahulsen posted on Twitter: 'Using ANDROID_001 tonight. Transfers split as planned across 7 accounts. @ArjunG...'",
+        "confidence": 0.95,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T20:15:00+05:30",
+        "action": "MENTIONED_USER",
+        "description": "@Rahulsen linked to @Arjung via MENTIONED_USER",
+        "confidence": 0.85,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T21:10:00+05:30",
+        "action": "MENTIONED_USER",
+        "description": "@Arjung linked to @Rahulsen via MENTIONED_USER",
+        "confidence": 0.85,
+        "source_type": ""
+      }
+    ]
+  },
+  {
+    "person_id": "MASTER_359a9c21",
+    "name": "Hyundai",
+    "risk_score": 5.0,
+    "risk_level": "LOW",
+    "confidence": 1.0,
+    "graph_metrics": {
+      "degree": 0.0435,
+      "betweenness": 0.0,
+      "pagerank": 0.0154
+    },
+    "triggered_rules": [],
+    "explanation": "Hyundai has a LOW risk score of 5.0. No suspicious forensic rules were triggered.",
+    "identifiers": [
+      "hyundai"
+    ],
+    "entity_types": [
+      "PERSON"
+    ],
+    "evidence": [],
+    "timeline": [
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to Hyundai via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      },
+      {
+        "timestamp": "2026-05-22T21:00:00+05:30",
+        "action": "MENTIONED",
+        "description": "@Vikramk linked to Hyundai via MENTIONED",
+        "confidence": 0.7,
+        "source_type": ""
+      }
+    ]
+  },
+  {
+    "person_id": "MASTER_e6f4f60a",
+    "name": "MASTER_e6f4f60a",
+    "risk_score": 5.0,
+    "risk_level": "LOW",
+    "confidence": 1.0,
+    "graph_metrics": {
+      "degree": 0.0217,
+      "betweenness": 0.0,
+      "pagerank": 0.0125
+    },
+    "triggered_rules": [],
+    "explanation": "MASTER_e6f4f60a has a LOW risk score of 5.0. No suspicious forensic rules were triggered.",
+    "identifiers": [
+      "vehicle confirmation\ndate"
+    ],
+    "entity_types": [
+      "PERSON"
+    ],
+    "evidence": [],
+    "timeline": [
+      {
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "action": "MENTIONED",
+        "description": "Rahul Sen linked to MASTER_e6f4f60a via MENTIONED",
+        "confidence": 0.75,
+        "source_type": ""
+      }
+    ]
+  }
+]

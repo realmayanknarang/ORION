@@ -1,0 +1,447 @@
+{
+  "generated_at": "2026-05-31T10:19:49.312474",
+  "total_flags": 25,
+  "severity_summary": {
+    "CRITICAL": 0,
+    "HIGH": 19,
+    "MEDIUM": 6
+  },
+  "flags": {
+    "smurfing": [
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_9c967250",
+        "account_name": "ACC8001",
+        "recipients": [
+          "Rajan Mehta"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          9000
+        ],
+        "total_amount": 9000,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T21:41:00",
+        "duration_minutes": 24,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.9"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_0435e1b0",
+        "account_name": "ACC3001",
+        "recipients": [
+          "Rajan Mehta"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          9200
+        ],
+        "total_amount": 9200,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T21:36:00",
+        "duration_minutes": 24,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.9"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_d7c86824",
+        "account_name": "ACC2001",
+        "recipients": [
+          "Rajan Mehta"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          9400
+        ],
+        "total_amount": 9400,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T21:35:00",
+        "duration_minutes": 24,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.9"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_03b528ae",
+        "account_name": "ACC4001",
+        "recipients": [
+          "Rajan Mehta"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          9500
+        ],
+        "total_amount": 9500,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T21:37:00",
+        "duration_minutes": 24,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.9"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_f3d6d2a8",
+        "account_name": "ACC6001",
+        "recipients": [
+          "Rajan Mehta"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          9300
+        ],
+        "total_amount": 9300,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T21:39:00",
+        "duration_minutes": 24,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.9"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_5945757a",
+        "account_name": "ACC7001",
+        "recipients": [
+          "Rajan Mehta"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          9100
+        ],
+        "total_amount": 9100,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T21:40:00",
+        "duration_minutes": 24,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.9"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_2eb1ee24",
+        "account_name": "ACC5001",
+        "recipients": [
+          "Rajan Mehta"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          8900
+        ],
+        "total_amount": 8900,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T21:38:00",
+        "duration_minutes": 24,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.9"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_ee1fa35b",
+        "account_name": "Rajan Mehta",
+        "recipients": [
+          "ACC_HAWALA"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          64400
+        ],
+        "total_amount": 64400,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T22:05:00",
+        "duration_minutes": 24,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.91"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_ee1fa35b",
+        "account_name": "Rajan Mehta",
+        "recipients": [
+          "ACC_HAWALA"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          64400
+        ],
+        "total_amount": 64400,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T22:05:00",
+        "duration_minutes": 29,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.91"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_ee1fa35b",
+        "account_name": "Rajan Mehta",
+        "recipients": [
+          "ACC_HAWALA"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          64400
+        ],
+        "total_amount": 64400,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T22:05:00",
+        "duration_minutes": 30,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.91"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_ee1fa35b",
+        "account_name": "Rajan Mehta",
+        "recipients": [
+          "ACC_HAWALA"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          64400
+        ],
+        "total_amount": 64400,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T22:05:00",
+        "duration_minutes": 28,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.91"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_ee1fa35b",
+        "account_name": "Rajan Mehta",
+        "recipients": [
+          "ACC_HAWALA"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          64400
+        ],
+        "total_amount": 64400,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T22:05:00",
+        "duration_minutes": 26,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.91"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_ee1fa35b",
+        "account_name": "Rajan Mehta",
+        "recipients": [
+          "ACC_HAWALA"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          64400
+        ],
+        "total_amount": 64400,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T22:05:00",
+        "duration_minutes": 25,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.91"
+      },
+      {
+        "rule": "FIN_MULE_PATTERN",
+        "severity": "HIGH",
+        "account_id": "MASTER_ee1fa35b",
+        "account_name": "Rajan Mehta",
+        "recipients": [
+          "ACC_HAWALA"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          64400
+        ],
+        "total_amount": 64400,
+        "transfer_count": 1,
+        "time_window": "2026-05-22T22:05:00",
+        "duration_minutes": 27,
+        "description": "Flagged financial behavior (Mule Pattern): score contribution 13.91"
+      },
+      {
+        "rule": "SMURFING_DETECTED",
+        "severity": "HIGH",
+        "account_id": "MASTER_b41353c7",
+        "account_name": "Rahul Sen",
+        "recipients": [
+          "ACC2001",
+          "ACC3001",
+          "ACC4001",
+          "ACC5001",
+          "ACC6001",
+          "ACC7001",
+          "ACC8001"
+        ],
+        "recipient_ids": [],
+        "amounts": [
+          9400,
+          9200,
+          9500,
+          8900,
+          9300,
+          9100,
+          9000
+        ],
+        "total_amount": 64400,
+        "transfer_count": 7,
+        "time_window": "2026-05-22T21:11:00",
+        "duration_minutes": 0,
+        "description": "Flagged financial behavior (Smurfing): score contribution 10.41"
+      }
+    ],
+    "forensic_hits": [
+      {
+        "rule": "FORENSIC_HIT",
+        "severity": "MEDIUM",
+        "channel": "emailed",
+        "source": "Rahul Sen",
+        "source_id": "MASTER_b41353c7",
+        "target": "Arjun",
+        "target_id": "",
+        "signal": "delete_instruction",
+        "timestamp": "2026-05-22T19:45:00+05:30",
+        "text_snippet": "Tonight's Operation - Final Plan",
+        "description": "Forensic hit (Deletion Language): Tonight's Operation - Final Plan"
+      }
+    ],
+    "communication_bursts": [
+      {
+        "rule": "TEMP_COMM_TO_TRANSFER",
+        "severity": "HIGH",
+        "actors": [
+          "Rajan Mehta",
+          "Network Target"
+        ],
+        "actor_ids": [
+          "MASTER_ee1fa35b"
+        ],
+        "count": 1,
+        "window": "2026-05-22T22:05:00",
+        "description": "Communication pattern (Communication -> Transfer Coordination) flagged: score contribution 8.35"
+      },
+      {
+        "rule": "TEMP_COMM_TO_TRANSFER",
+        "severity": "HIGH",
+        "actors": [
+          "Vikram Khanna",
+          "Network Target"
+        ],
+        "actor_ids": [
+          "MASTER_f24caf16"
+        ],
+        "count": 1,
+        "window": "2026-05-22T21:17:00",
+        "description": "Communication pattern (Communication -> Transfer Coordination) flagged: score contribution 8.33"
+      }
+    ],
+    "colocations": [],
+    "cross_source_corroboration": [
+      {
+        "rule": "CO_CORROBORATION",
+        "severity": "MEDIUM",
+        "entity_name": "Chatterjee Lane, Bowbazar, Kolkata",
+        "entity_id": "MASTER_ad6e0d66",
+        "entity_type": "PLACE",
+        "sources": [
+          "asset_tracker",
+          "gps_analysis",
+          "investigator_annotation",
+          "telecom_tower",
+          "vehicle_tracker",
+          "wearable_device"
+        ],
+        "source_count": 6,
+        "description": "Corroboration flag: appears across 6 sources"
+      },
+      {
+        "rule": "CO_CORROBORATION",
+        "severity": "MEDIUM",
+        "entity_name": "Bow Bazar North, Kolkata",
+        "entity_id": "MASTER_59760bb7",
+        "entity_type": "PLACE",
+        "sources": [
+          "gps_analysis",
+          "mobile_gps",
+          "telecom_tower",
+          "wearable_device"
+        ],
+        "source_count": 4,
+        "description": "Corroboration flag: appears across 4 sources"
+      },
+      {
+        "rule": "CO_CORROBORATION",
+        "severity": "MEDIUM",
+        "entity_name": "Biplabi Pulin Das Street, City College, Kolkata",
+        "entity_id": "MASTER_10d0d169",
+        "entity_type": "PLACE",
+        "sources": [
+          "gps_analysis",
+          "mobile_gps",
+          "vehicle_tracker"
+        ],
+        "source_count": 3,
+        "description": "Corroboration flag: appears across 3 sources"
+      },
+      {
+        "rule": "CO_CORROBORATION",
+        "severity": "MEDIUM",
+        "entity_name": "Howrah Maidan, Haora",
+        "entity_id": "MASTER_9e7d3007",
+        "entity_type": "PLACE",
+        "sources": [
+          "gps_analysis",
+          "vehicle_tracker",
+          "wearable_device"
+        ],
+        "source_count": 3,
+        "description": "Corroboration flag: appears across 3 sources"
+      },
+      {
+        "rule": "CO_CORROBORATION",
+        "severity": "HIGH",
+        "entity_name": "Rahul Sen",
+        "entity_id": "MASTER_b41353c7",
+        "entity_type": "PERSON",
+        "sources": [
+          "bank_transaction",
+          "cdr_record",
+          "fir_document",
+          "mobile_gps",
+          "telecom_tower"
+        ],
+        "source_count": 5,
+        "description": "Corroboration flag: appears across 5 sources"
+      },
+      {
+        "rule": "CO_CORROBORATION",
+        "severity": "HIGH",
+        "entity_name": "Arjun",
+        "entity_id": "MASTER_6137f90b",
+        "entity_type": "PERSON",
+        "sources": [
+          "cdr_record",
+          "fir_document",
+          "telecom_tower"
+        ],
+        "source_count": 3,
+        "description": "Corroboration flag: appears across 3 sources"
+      },
+      {
+        "rule": "CO_CORROBORATION",
+        "severity": "MEDIUM",
+        "entity_name": "Vikram Khanna",
+        "entity_id": "MASTER_f24caf16",
+        "entity_type": "PERSON",
+        "sources": [
+          "cdr_record",
+          "telecom_tower",
+          "wearable_device"
+        ],
+        "source_count": 3,
+        "description": "Corroboration flag: appears across 3 sources"
+      }
+    ]
+  }
+}

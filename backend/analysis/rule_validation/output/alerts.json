@@ -1,0 +1,504 @@
+[
+  {
+    "entity_id": "MASTER_b41353c7",
+    "entity_name": "Rahul Sen",
+    "rule": "COMM_DELETION_LANGUAGE",
+    "description": "Deletion Language",
+    "weighted_score": 5.76,
+    "timestamp": "2026-05-22T19:45:00+05:30",
+    "evidence": {
+      "channel": "emailed",
+      "target": "Arjun",
+      "text_snippet": "Tonight's Operation - Final Plan",
+      "matched_by": "forensic_signal"
+    }
+  },
+  {
+    "entity_id": "MASTER_9c967250",
+    "entity_name": "ACC8001",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.9,
+    "timestamp": "2026-05-22T21:41:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "Rahul Sen",
+        "amount": 9000,
+        "timestamp": "2026-05-22 21:17:00"
+      },
+      "outbound_transfer": {
+        "target": "Rajan Mehta",
+        "amount": 9000,
+        "timestamp": "2026-05-22 21:41:00"
+      },
+      "delay_seconds": 1440
+    }
+  },
+  {
+    "entity_id": "MASTER_0435e1b0",
+    "entity_name": "ACC3001",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.9,
+    "timestamp": "2026-05-22T21:36:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "Rahul Sen",
+        "amount": 9200,
+        "timestamp": "2026-05-22 21:12:00"
+      },
+      "outbound_transfer": {
+        "target": "Rajan Mehta",
+        "amount": 9200,
+        "timestamp": "2026-05-22 21:36:00"
+      },
+      "delay_seconds": 1440
+    }
+  },
+  {
+    "entity_id": "MASTER_d7c86824",
+    "entity_name": "ACC2001",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.9,
+    "timestamp": "2026-05-22T21:35:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "Rahul Sen",
+        "amount": 9400,
+        "timestamp": "2026-05-22 21:11:00"
+      },
+      "outbound_transfer": {
+        "target": "Rajan Mehta",
+        "amount": 9400,
+        "timestamp": "2026-05-22 21:35:00"
+      },
+      "delay_seconds": 1440
+    }
+  },
+  {
+    "entity_id": "MASTER_03b528ae",
+    "entity_name": "ACC4001",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.9,
+    "timestamp": "2026-05-22T21:37:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "Rahul Sen",
+        "amount": 9500,
+        "timestamp": "2026-05-22 21:13:00"
+      },
+      "outbound_transfer": {
+        "target": "Rajan Mehta",
+        "amount": 9500,
+        "timestamp": "2026-05-22 21:37:00"
+      },
+      "delay_seconds": 1440
+    }
+  },
+  {
+    "entity_id": "MASTER_f3d6d2a8",
+    "entity_name": "ACC6001",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.9,
+    "timestamp": "2026-05-22T21:39:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "Rahul Sen",
+        "amount": 9300,
+        "timestamp": "2026-05-22 21:15:00"
+      },
+      "outbound_transfer": {
+        "target": "Rajan Mehta",
+        "amount": 9300,
+        "timestamp": "2026-05-22 21:39:00"
+      },
+      "delay_seconds": 1440
+    }
+  },
+  {
+    "entity_id": "MASTER_5945757a",
+    "entity_name": "ACC7001",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.9,
+    "timestamp": "2026-05-22T21:40:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "Rahul Sen",
+        "amount": 9100,
+        "timestamp": "2026-05-22 21:16:00"
+      },
+      "outbound_transfer": {
+        "target": "Rajan Mehta",
+        "amount": 9100,
+        "timestamp": "2026-05-22 21:40:00"
+      },
+      "delay_seconds": 1440
+    }
+  },
+  {
+    "entity_id": "MASTER_2eb1ee24",
+    "entity_name": "ACC5001",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.9,
+    "timestamp": "2026-05-22T21:38:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "Rahul Sen",
+        "amount": 8900,
+        "timestamp": "2026-05-22 21:14:00"
+      },
+      "outbound_transfer": {
+        "target": "Rajan Mehta",
+        "amount": 8900,
+        "timestamp": "2026-05-22 21:38:00"
+      },
+      "delay_seconds": 1440
+    }
+  },
+  {
+    "entity_id": "MASTER_ee1fa35b",
+    "entity_name": "Rajan Mehta",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.91,
+    "timestamp": "2026-05-22T22:05:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "ACC8001",
+        "amount": 9000,
+        "timestamp": "2026-05-22 21:41:00"
+      },
+      "outbound_transfer": {
+        "target": "ACC_HAWALA",
+        "amount": 64400,
+        "timestamp": "2026-05-22 22:05:00"
+      },
+      "delay_seconds": 1440
+    }
+  },
+  {
+    "entity_id": "MASTER_ee1fa35b",
+    "entity_name": "Rajan Mehta",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.91,
+    "timestamp": "2026-05-22T22:05:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "ACC3001",
+        "amount": 9200,
+        "timestamp": "2026-05-22 21:36:00"
+      },
+      "outbound_transfer": {
+        "target": "ACC_HAWALA",
+        "amount": 64400,
+        "timestamp": "2026-05-22 22:05:00"
+      },
+      "delay_seconds": 1740
+    }
+  },
+  {
+    "entity_id": "MASTER_ee1fa35b",
+    "entity_name": "Rajan Mehta",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.91,
+    "timestamp": "2026-05-22T22:05:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "ACC2001",
+        "amount": 9400,
+        "timestamp": "2026-05-22 21:35:00"
+      },
+      "outbound_transfer": {
+        "target": "ACC_HAWALA",
+        "amount": 64400,
+        "timestamp": "2026-05-22 22:05:00"
+      },
+      "delay_seconds": 1800
+    }
+  },
+  {
+    "entity_id": "MASTER_ee1fa35b",
+    "entity_name": "Rajan Mehta",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.91,
+    "timestamp": "2026-05-22T22:05:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "ACC4001",
+        "amount": 9500,
+        "timestamp": "2026-05-22 21:37:00"
+      },
+      "outbound_transfer": {
+        "target": "ACC_HAWALA",
+        "amount": 64400,
+        "timestamp": "2026-05-22 22:05:00"
+      },
+      "delay_seconds": 1680
+    }
+  },
+  {
+    "entity_id": "MASTER_ee1fa35b",
+    "entity_name": "Rajan Mehta",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.91,
+    "timestamp": "2026-05-22T22:05:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "ACC6001",
+        "amount": 9300,
+        "timestamp": "2026-05-22 21:39:00"
+      },
+      "outbound_transfer": {
+        "target": "ACC_HAWALA",
+        "amount": 64400,
+        "timestamp": "2026-05-22 22:05:00"
+      },
+      "delay_seconds": 1560
+    }
+  },
+  {
+    "entity_id": "MASTER_ee1fa35b",
+    "entity_name": "Rajan Mehta",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.91,
+    "timestamp": "2026-05-22T22:05:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "ACC7001",
+        "amount": 9100,
+        "timestamp": "2026-05-22 21:40:00"
+      },
+      "outbound_transfer": {
+        "target": "ACC_HAWALA",
+        "amount": 64400,
+        "timestamp": "2026-05-22 22:05:00"
+      },
+      "delay_seconds": 1500
+    }
+  },
+  {
+    "entity_id": "MASTER_ee1fa35b",
+    "entity_name": "Rajan Mehta",
+    "rule": "FIN_MULE_PATTERN",
+    "description": "Mule Pattern",
+    "weighted_score": 13.91,
+    "timestamp": "2026-05-22T22:05:00",
+    "evidence": {
+      "inbound_transfer": {
+        "source": "ACC5001",
+        "amount": 8900,
+        "timestamp": "2026-05-22 21:38:00"
+      },
+      "outbound_transfer": {
+        "target": "ACC_HAWALA",
+        "amount": 64400,
+        "timestamp": "2026-05-22 22:05:00"
+      },
+      "delay_seconds": 1620
+    }
+  },
+  {
+    "entity_id": "MASTER_ee1fa35b",
+    "entity_name": "Rajan Mehta",
+    "rule": "TEMP_COMM_TO_TRANSFER",
+    "description": "Communication -> Transfer Coordination",
+    "weighted_score": 8.35,
+    "timestamp": "2026-05-22T22:05:00",
+    "evidence": {
+      "communication": {
+        "type": "CALLED",
+        "source": "Rajan Mehta",
+        "target": "Arjun",
+        "timestamp": "2026-05-22 22:00:00"
+      },
+      "transfer": {
+        "source": "Rajan Mehta",
+        "target": "ACC_HAWALA",
+        "amount": 64400,
+        "timestamp": "2026-05-22 22:05:00"
+      },
+      "delay_seconds": 300
+    }
+  },
+  {
+    "entity_id": "MASTER_f24caf16",
+    "entity_name": "Vikram Khanna",
+    "rule": "TEMP_COMM_TO_TRANSFER",
+    "description": "Communication -> Transfer Coordination",
+    "weighted_score": 8.33,
+    "timestamp": "2026-05-22T21:17:00",
+    "evidence": {
+      "communication": {
+        "type": "CALLED",
+        "source": "Vikram Khanna",
+        "target": "Rahul Sen",
+        "timestamp": "2026-05-22 21:05:00"
+      },
+      "transfer": {
+        "source": "Rahul Sen",
+        "target": "ACC8001",
+        "amount": 9000,
+        "timestamp": "2026-05-22 21:17:00"
+      },
+      "delay_seconds": 720
+    }
+  },
+  {
+    "entity_id": "MASTER_b41353c7",
+    "entity_name": "Rahul Sen",
+    "rule": "FIN_SMURFING",
+    "description": "Smurfing",
+    "weighted_score": 10.41,
+    "timestamp": "2026-05-22T21:11:00",
+    "evidence": {
+      "transfer_count": 7,
+      "total_amount": 64400,
+      "amounts": [
+        9400,
+        9200,
+        9500,
+        8900,
+        9300,
+        9100,
+        9000
+      ],
+      "targets": [
+        "ACC2001",
+        "ACC3001",
+        "ACC4001",
+        "ACC5001",
+        "ACC6001",
+        "ACC7001",
+        "ACC8001"
+      ]
+    }
+  },
+  {
+    "entity_id": "MASTER_ad6e0d66",
+    "entity_name": "Chatterjee Lane, Bowbazar, Kolkata",
+    "rule": "CO_CORROBORATION",
+    "description": "Cross-Source Corroboration",
+    "weighted_score": 6.33,
+    "timestamp": "2026-05-22T22:20:00",
+    "evidence": {
+      "sources_count": 6,
+      "sources_list": [
+        "asset_tracker",
+        "gps_analysis",
+        "investigator_annotation",
+        "telecom_tower",
+        "vehicle_tracker",
+        "wearable_device"
+      ]
+    }
+  },
+  {
+    "entity_id": "MASTER_59760bb7",
+    "entity_name": "Bow Bazar North, Kolkata",
+    "rule": "CO_CORROBORATION",
+    "description": "Cross-Source Corroboration",
+    "weighted_score": 6.33,
+    "timestamp": "2026-05-22T22:38:00",
+    "evidence": {
+      "sources_count": 4,
+      "sources_list": [
+        "gps_analysis",
+        "mobile_gps",
+        "telecom_tower",
+        "wearable_device"
+      ]
+    }
+  },
+  {
+    "entity_id": "MASTER_10d0d169",
+    "entity_name": "Biplabi Pulin Das Street, City College, Kolkata",
+    "rule": "CO_CORROBORATION",
+    "description": "Cross-Source Corroboration",
+    "weighted_score": 6.33,
+    "timestamp": "2026-05-22T22:35:00",
+    "evidence": {
+      "sources_count": 3,
+      "sources_list": [
+        "gps_analysis",
+        "mobile_gps",
+        "vehicle_tracker"
+      ]
+    }
+  },
+  {
+    "entity_id": "MASTER_9e7d3007",
+    "entity_name": "Howrah Maidan, Haora",
+    "rule": "CO_CORROBORATION",
+    "description": "Cross-Source Corroboration",
+    "weighted_score": 6.33,
+    "timestamp": "2026-05-22T22:40:00",
+    "evidence": {
+      "sources_count": 3,
+      "sources_list": [
+        "gps_analysis",
+        "vehicle_tracker",
+        "wearable_device"
+      ]
+    }
+  },
+  {
+    "entity_id": "MASTER_b41353c7",
+    "entity_name": "Rahul Sen",
+    "rule": "CO_CORROBORATION",
+    "description": "Cross-Source Corroboration",
+    "weighted_score": 8.95,
+    "timestamp": "2026-05-29T21:00:00",
+    "evidence": {
+      "sources_count": 5,
+      "sources_list": [
+        "bank_transaction",
+        "cdr_record",
+        "fir_document",
+        "mobile_gps",
+        "telecom_tower"
+      ]
+    }
+  },
+  {
+    "entity_id": "MASTER_6137f90b",
+    "entity_name": "Arjun",
+    "rule": "CO_CORROBORATION",
+    "description": "Cross-Source Corroboration",
+    "weighted_score": 8.95,
+    "timestamp": "2026-05-29T21:00:00",
+    "evidence": {
+      "sources_count": 3,
+      "sources_list": [
+        "cdr_record",
+        "fir_document",
+        "telecom_tower"
+      ]
+    }
+  },
+  {
+    "entity_id": "MASTER_f24caf16",
+    "entity_name": "Vikram Khanna",
+    "rule": "CO_CORROBORATION",
+    "description": "Cross-Source Corroboration",
+    "weighted_score": 6.33,
+    "timestamp": "2026-05-22T22:38:00",
+    "evidence": {
+      "sources_count": 3,
+      "sources_list": [
+        "cdr_record",
+        "telecom_tower",
+        "wearable_device"
+      ]
+    }
+  }
+]
